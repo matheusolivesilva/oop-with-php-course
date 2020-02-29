@@ -11,3 +11,8 @@ $conta->saldo = 500;
 $conta->sacar(200);
 
 echo "Saldo da conta {$conta->saldo}";
+
+$conta->depositar(500);
+echo PHP_EOL;
+
+echo "Saldo da conta apos deposito {$conta->saldo}";
