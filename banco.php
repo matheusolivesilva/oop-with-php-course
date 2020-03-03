@@ -1,7 +1,7 @@
 <?php
 
 require_once 'src/Conta.php';
-$primeiraConta  = new Conta("Matheus", "432.333.333-29");
+$primeiraConta  = new Conta("432.383.000-66", "Joao");
 $primeiraConta->depositar(500);
 $primeiraConta->sacar(300);
 
