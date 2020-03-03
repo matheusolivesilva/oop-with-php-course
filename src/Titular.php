@@ -4,7 +4,7 @@ class Titular {
 	private $nome;
 	private $cpf;
 
-	public function __construct(string $cpf, string  $nome)
+	public function __construct(CPF $cpf, string  $nome)
 	{
 		$this->validaNomeTitular($nome);
 		$this->nome = $nome;
@@ -19,7 +19,7 @@ class Titular {
 
 	public function recuperaCpf(): string
 	{
-		return $this->cpf;
+		return $this->cpf->recuperaNumero();
 	}
 
 	private function validaNomeTitular(string $nomeTitular)                                                     {                                                             if(strlen($nomeTitular) < 5) {
