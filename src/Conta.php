@@ -6,6 +6,7 @@ class Conta
 	private $cpfTitular;
 	private $nomeTitular;
 	private $saldo;
+	private static  $numeroDeContas;
 
 	public function __construct(string $cpfTitular, string $nomeTitular)
 	{
@@ -13,6 +14,7 @@ class Conta
 		$this->validaNomeTitular($nomeTitular);
 		$this->nomeTitular = $nomeTitular;
 		$this->saldo = 0;
+		self::$numeroDeContas++;
 	}
 
 	public function sacar(float $valorASacar): void
@@ -70,6 +72,11 @@ class Conta
 			echo "Nome precisa ter no minimo 5 caracteres";
 			exit();
 		}
+	}
+
+	public static function recuperarNumeroDeContas(): int
+	{
+		return self::$numeroDeContas;
 	}
 
 }
