@@ -13,6 +13,8 @@ $segundaConta  = new Conta("432.383.990-66", "Maria");
 
 var_dump($segundaConta);
 
-new Conta("432.883.999-66", "Daniel");
+unset($segundaConta);
+
+$outra = new Conta("432.883.999-66", "Daniel");
 
 echo "Qtd contas: " . Conta::recuperarNumeroDeContas();
