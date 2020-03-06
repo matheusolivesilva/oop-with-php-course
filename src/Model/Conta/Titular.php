@@ -1,5 +1,6 @@
 <?php
-namespace Modelo;
+
+namespace Alura\Banco\Conta\Modelo;
 class Titular extends Funcionario 
 {
 	private $endereco;
