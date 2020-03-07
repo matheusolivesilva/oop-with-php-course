@@ -1,7 +1,12 @@
 <?php
 
-namespace Alura\Banco\Conta\Modelo;
-class Titular extends Funcionario 
+namespace Alura\Banco\Model\Conta;
+
+use Alura\Banco\Model\Pessoa;
+use Alura\Banco\Model\CPF;
+use Alura\Banco\Model\Endereco;
+
+class Titular extends Pessoa
 {
 	private $endereco;
 
@@ -20,7 +25,7 @@ class Titular extends Funcionario
 	{
 		
 		$this->validaNomeTitular($nome);
-		$this-nome->nome;
+		$this->nome = nome;
 	}
 
 

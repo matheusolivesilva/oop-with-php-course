@@ -1,11 +1,11 @@
 <?php
-namespace Alura\Banco\Modelo;
+namespace Alura\Banco\Model;
 class Funcionario extends Pessoa
 {
 	private $cargo;
 
 	public function __construct(string $nome, CPF $cpf, string $cargo) {
-		parent::_construct($nome, $cpf);
+		parent::__construct($nome, $cpf);
 		$this->cargo = $cargo;
 	}
 	
