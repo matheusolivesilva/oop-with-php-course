@@ -12,7 +12,8 @@ $conta = new Conta(
 			new CPF('888.888.999-99'),
 			'Dididi',
 			new Endereco('São Paulo', 'Teste', 'Rua teste', '888')
-		)
+		),
+		2
 );
 $conta->depositar(600);
 
