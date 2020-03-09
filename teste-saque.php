@@ -4,6 +4,7 @@ require 'autoload.php';
 
 use Alura\Banco\Model\Conta\Titular;
 use Alura\Banco\Model\Conta\Conta;
+use Alura\Banco\Model\Conta\ContaPoupanca;
 use Alura\Banco\Model\CPF;
 use Alura\Banco\Model\Endereco;
 
@@ -15,7 +16,7 @@ $conta = new Conta(
 		),
 		2
 );
-$conta->depositar(600);
+$conta->depositar(500);
 
 $conta->sacar(100);
 
