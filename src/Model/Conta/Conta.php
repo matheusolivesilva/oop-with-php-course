@@ -20,13 +20,15 @@ class Conta
 	}
 
 	public function sacar(float $valorASacar): void
-	{                                                 
-		if($valorASacar > $this->saldo) {         
+	{                 
+		$tarifaSaque = $valorASacar * 0.05;
+		$valorSaque =  $valorASacar + $tarifaSaque;		
+		if($valorSaque > $this->saldo) {         
 			echo "Saldo indisponivel!";    
 			return;
 		}
 
-		$this->saldo -= $valorASacar;             
+		$this->saldo -= $valorSaque;
 	}
 
 	public function depositar($valorADepositar): void
