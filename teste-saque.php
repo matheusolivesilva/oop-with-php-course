@@ -2,12 +2,8 @@
 
 require 'autoload.php';
 
-use Alura\Banco\Model\Conta\Titular;
-use Alura\Banco\Model\Conta\Conta;
-use Alura\Banco\Model\Conta\ContaPoupanca;
-use Alura\Banco\Model\Conta\ContaCorrente;
-use Alura\Banco\Model\CPF;
-use Alura\Banco\Model\Endereco;
+use Alura\Banco\Model\Conta\{Titular, Conta, ContaPoupanca, ContaCorrente};
+use Alura\Banco\Model\{CPF, Endereco};
 
 $conta = new ContaCorrente(
 		new Titular(
