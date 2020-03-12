@@ -8,7 +8,7 @@ class Diretor extends Funcionario
 {
 	public function calculaBonificacao(): float
 	{
-		return $this->recuperaSalario() * 0.2;
+		return $this->recuperaSalario() * 2;
 	}
 
 	public function podeAutenticar(string $senha): bool
