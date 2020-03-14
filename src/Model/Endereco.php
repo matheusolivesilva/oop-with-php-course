@@ -3,6 +3,7 @@
 namespace Alura\Banco\Model;
 final class Endereco
 {
+	use AcessoPropriedades;
 	private $cidade;
 	private $bairro;
 	private $rua;
@@ -39,10 +40,5 @@ final class Endereco
 	public function __toString()
 	{
 		return "{$this->rua}, {$this->numero}, {$this->bairro}, {$this->cidade}";
-	}
-
-	public function __get(string $nomeAtributo) {
-		$metodo = "recupera " . ucFirst($nomeAtributo);
-		return $this->metodo;
 	}
 }
