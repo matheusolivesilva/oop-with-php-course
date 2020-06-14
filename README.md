@@ -30,4 +30,4 @@ This simple project was written with the techniques and tecnologies below:
 
 ## Author
 
-* **Matheus Oliveira** - [Github](https://github.com/MatheusOliveiraSilva/) | [Linkedin](https://www.linkedin.com/in/matheusoliveirasilva/)
+* **Matheus Oliveira** - [Github](https://github.com/matheusolivesilva/) | [Linkedin](https://www.linkedin.com/in/matheusoliveirasilva/)
